@@ -1,2 +1,26 @@
-# auto-insurance-glm-pricing
-Frequency–severity GLM pricing model for auto insurance (NB/Logit/Gamma) with pure premium scoring and decile lift evaluation
+# Auto Insurance GLM Pricing (Frequency–Severity)
+
+Frequency–severity GLM pricing model for auto insurance:
+- Frequency: Negative Binomial GLM
+- Claim occurrence: Binomial (Logit) GLM
+- Severity: Gamma GLM  
+Pure premium = frequency × severity
+
+## Results
+- Scored 10,302 policies and ranked risk via predicted pure premium
+- Top decile captured ~30% of total losses (strong risk separation)
+- Loss ratio separation ~36× between top and bottom deciles
+
+## Decile lift
+![Decile lift](figures/decile_lift.png)
+
+## Repository contents
+- `AUTOGLM.ipynb` – model training + evaluation notebook
+- `figures/` – plots and lift/decile results
+
+## How to run
+1. `pip install -r requirements.txt`
+2. Open `AUTOGLM.ipynb` and run all cells
+
+## Data
+Data not included in this repository. The notebook assumes a prepared dataset with rating variables and loss outcomes.
