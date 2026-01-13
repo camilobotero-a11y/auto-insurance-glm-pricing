@@ -23,4 +23,8 @@ Pure premium = frequency × severity
 2. Open `AUTOGLM.ipynb` and run all cells
 
 ## Data
-Data not included in this repository. The notebook assumes a prepared dataset with rating variables and loss outcomes.
+Data source (Kaggle):
+https://www.kaggle.com/datasets/xiaomengsun/car-insurance-claim-data
+
+File expected:
+data/car_insurance_claim.csv
